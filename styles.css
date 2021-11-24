@@ -1,11 +1,13 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 .container {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 5px 20px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -25,6 +27,13 @@ body {
 
 .button:hover {
   background-color: #0266d2;
+}
+
+p {
+  color: #868e96;
+  display: inline-block;
+  margin-top: -10px;
+  line-height: 1.5;
 }
 
 /* Header styles */
@@ -57,7 +66,6 @@ header .header-title {
   position: relative;
   margin-top: 51px;
   padding: 100px 0;
-  background: pink;
 }
 
 .hero:before {
@@ -91,32 +99,214 @@ header .header-title {
   color: #fff;
   font-size: 42px;
   text-align: center;
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
 }
 .email-box {
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 5px;
-  
+  gap: 10px;
+  margin-bottom: 51px;
 }
 .email-box input {
   display: inline-block;
   border-radius: 4px;
   border: none;
-  padding: 8px ;
-  width: 350px;
-  
+  padding: 15px;
+  width: 450px;
 }
 
 .email-box .button {
-  padding: 7px 30px;
+  padding: 14px 35px;
+}
+
+/* Icons Grid section styles */
+
+.icons-grid {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  gap: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.icons-grid-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 260px;
+  width: 100%;
+  margin: 120px 0 110px 0;
+}
+
+.icons-grid-box svg {
+  width: 75px;
+  height: 75px;
+}
+
+/* Text Image Grid section styles */
+
+.text-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+}
+.text-image-grid img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.box-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 0 auto;
+  align-content: center;
+  max-width: 495px;
+  font-size: 18px;
+}
+
+/* Testimonials section styles */
+.testimonials {
+  background-color: #f8f9fa;
+}
+.testimonials h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 150px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.testimonials-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials-flex div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 310px;
+  width: 100%;
+  margin-bottom: 140px;
+}
+.testimonials-flex img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Hero small styles */
+.small {
+  margin-top: 0;
+}
+
+.small h2 {
+  font-size: 33px;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 5px 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-box {
+  line-height: 1.9;
+}
+
+.footer-box span {
+  color: #868e96;
+}
+
+.befor::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 10;
+}
+.footer-navigation a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #027bfe;
+  font-size: 19px;
+  margin-right: 30px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-navigation a:hover {
+  color: #0266d2;
+}
+
+.brand-icons svg {
+  width: 50px;
+  height: 50px;
+  margin: 100px 0 100px 0;
+  margin-right: 30px;
+}
+
+.brand-icons svg:first-child {
+  width: 70px;
+  height: 70px;
 }
 
 /* Media-queries */
 
 @media (max-width: 700px) {
   .hero {
-      padding: 50px 0;
-    }
+    padding: 50px 0;
+  }
+  .icons-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .icons-grid-box {
+    margin: 20px 0 20px 0;
+  }
+}
+/* @media (max-width: 550px) {
+  .email-box {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-1 {
+  }
+} */
