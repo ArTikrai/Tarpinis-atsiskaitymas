@@ -221,7 +221,6 @@ header .header-title {
   color: #fff;
   text-align: center;
   max-width: 800px;
-  width: 100%;
 }
 
 /* Footer styles */
@@ -250,7 +249,7 @@ footer {
 .befor::before {
   content: "";
   position: absolute;
-  left: -15px;
+  right: -15px;
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
@@ -294,6 +293,10 @@ footer {
     padding: 50px 0;
   }
   .content h1 {
+    padding: 0 10px 0 10px;
+  }
+
+  .content h2 {
     padding: 0 10px 0 10px;
   }
 
@@ -365,9 +368,12 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
+  .footer-navigation {
+    padding-left: 10px;
+  }
   .footer-box {
     padding-top: 50px;
+    align-self: center;
   }
 
   .brand-icons svg {
