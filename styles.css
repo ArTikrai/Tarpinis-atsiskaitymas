@@ -100,7 +100,6 @@ header .header-title {
   font-size: 42px;
   text-align: center;
   max-width: 800px;
-  width: 100%;
 }
 .email-box {
   display: flex;
@@ -115,6 +114,7 @@ header .header-title {
   border: none;
   padding: 15px;
   width: 450px;
+  color: #868e96;
 }
 
 .email-box .button {
@@ -293,20 +293,121 @@ footer {
   .hero {
     padding: 50px 0;
   }
+  .content h1 {
+    padding: 0 10px 0 10px;
+  }
+
   .icons-grid {
     flex-direction: column;
     gap: 20px;
+    padding: 80px 0 80px 0;
   }
   .icons-grid-box {
     margin: 20px 0 20px 0;
   }
+
+  .text-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .text-image-grid img {
+    flex: 1;
+  }
+
+  .box-text {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    margin: 10px 65px 10px 65px;
+  }
+
+  .box-text-1 {
+    order: 1;
+  }
+
+  .text-image-grid-box-2 {
+    order: 2;
+  }
+
+  .box-text-2 {
+    order: 3;
+  }
+
+  .text-image-grid-box-3 {
+    order: 4;
+  }
+
+  .box-text-3 {
+    order: 5;
+  }
 }
-/* @media (max-width: 550px) {
-  .email-box {
+
+@media (max-width: 800px) {
+  .testimonials {
+    padding-bottom: 50px;
+  }
+  .testimonials-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+  }
+
+  .testimonials-flex div {
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-box {
+    padding-top: 50px;
+  }
+
+  .brand-icons svg {
+    margin: 20px 0 50px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .content {
+    display: inline-block;
+    width: 100%;
+  }
+  .content div {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .mobile-1 {
+  .email-box form,
+  .email-box nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 10px;
   }
-} */
+  .email-box input,
+  .email-box .button {
+    width: 650px;
+  }
+  .email-box input {
+    max-width: 90%;
+    font-size: 25px;
+  }
+  .email-box .button {
+    max-width: 80%;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .brand-icons svg:first-child {
+    width: 60px;
+    height: 60px;
+  }
+}
